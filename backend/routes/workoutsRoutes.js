@@ -1,12 +1,14 @@
 const router = require("express").Router();
-const workoutsController = require("../controllers/workoutsController");
+const {
+  findAll,
+  findOne,
+  add,
+  remove,
+  update,
+} = require("../controllers/workoutController");
 
-router.route("/").get(workoutsController.findAll).post(workoutsController.add);
+router.route("/").get(findAll).post(add);
 
-router
-  .route("/:id")
-  .get(workoutsController.findOne)
-  .delete(workoutsController.remove)
-  .patch(workoutsController.update);
+router.route("/:id").get(findOne).delete(remove).patch(update);
 
 module.exports = router;
