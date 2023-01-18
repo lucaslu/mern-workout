@@ -7,9 +7,11 @@ import WorkoutForm from "../components/WorkoutForm";
 const Home = () => {
   const { workouts, dispatch } = useWorkoutsContext();
 
+  const BACKEND = import.meta.env.VITE_BACKEND;
+
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const res = await fetch("http://localhost:4000/api/workouts");
+      const res = await fetch(`${BACKEND}/workouts`);
       const data = await res.json();
 
       if (res.ok) {
