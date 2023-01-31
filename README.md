@@ -4,7 +4,7 @@ Workout Buddy helps you tracking all the exercises to make your life easier and 
 
 ![Screenshot of Workout Tracker](./screenshot.jpg)
 
-## Tech Stack
+## MERN Tech Stack
 
 ### Frontend:
 
