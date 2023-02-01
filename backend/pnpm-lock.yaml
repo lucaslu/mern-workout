@@ -7,6 +7,7 @@ specifiers:
   express: ^4.18.2
   mongoose: ^6.9.0
   nodemon: ^2.0.20
+  validator: ^13.7.0
 
 dependencies:
   bcrypt: 5.1.0
@@ -14,6 +15,7 @@ dependencies:
   dotenv: 16.0.3
   express: 4.18.2
   mongoose: 6.9.0
+  validator: 13.7.0
 
 devDependencies:
   nodemon: 2.0.20
@@ -1961,6 +1963,11 @@ packages:
     hasBin: true
     dev: false
     optional: true
+
+  /validator/13.7.0:
+    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+    engines: {node: '>= 0.10'}
+    dev: false
 
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
