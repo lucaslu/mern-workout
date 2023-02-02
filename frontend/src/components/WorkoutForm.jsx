@@ -2,12 +2,12 @@ import { useState } from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 
 const WorkoutForm = () => {
-  const { dispatch } = useWorkoutsContext();
   const [title, setTitle] = useState("");
   const [load, setLoad] = useState("");
   const [reps, setReps] = useState("");
   const [error, setError] = useState(null);
   const [emptyFields, setEmptyFields] = useState([]);
+  const { dispatch } = useWorkoutsContext();
 
   const BACKEND = import.meta.env.VITE_BACKEND;
 
