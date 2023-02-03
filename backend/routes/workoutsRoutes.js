@@ -6,6 +6,10 @@ const {
   remove,
   update,
 } = require("../controllers/workoutController");
+const requireAuth = require("../middleware/requireAuth");
+
+// require auth for all workout routes
+router.use(requireAuth);
 
 router.route("/").get(findAll).post(add);
 
