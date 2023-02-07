@@ -1,6 +1,6 @@
 # Workout Buddy
 
-Workout Buddy helps you tracking all the exercises to make your life easier and helthier. If you'd like to check it out, you can access it by [clicking here](https://mern-workout.netlify.app)
+Workout Buddy helps you tracking all the exercises to make your life easier and helthier. It has user authentication by using JWT and password encryption by using bcrypt. If you'd like to check it out, you can access it by [clicking here](https://mern-workout.netlify.app)
 
 ![Screenshot of Workout Tracker](./screenshot.jpg)
 
@@ -18,6 +18,9 @@ Workout Buddy helps you tracking all the exercises to make your life easier and 
 - Node.js / Express
 - MongoDB
 - mongoose
+- bcrypt
+- jsonwebtoken
+- validator
 
 # Installation
 
